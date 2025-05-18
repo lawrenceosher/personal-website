@@ -4,6 +4,10 @@ body {
   font-family: "Figtree", sans-serif;
 }
 
+#header {
+  background-color: #161616 !important;
+}
+
 #name {
   color: rgba(220, 21, 21, 0);
   -webkit-text-fill-color: rgba(
@@ -50,4 +54,12 @@ body {
     0
   ); /* Will override color (regardless of order) */
   -webkit-text-stroke: 2px #ffffff;
+}
+
+#experience .nav-link {
+  color: white;
+}
+
+.nav-link.active {
+  background-color: transparent !important;
 }
