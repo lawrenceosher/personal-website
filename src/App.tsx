@@ -1,12 +1,14 @@
-import './App.css'
+import "./App.css";
+import Header from "./sections/Header";
+import About from "./sections/About";
 
 function App() {
-
   return (
     <>
-      <div>Inside personal site</div>
+      <Header />
+      <About />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
