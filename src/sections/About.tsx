@@ -2,7 +2,7 @@ import "../App.css";
 
 export default function About() {
   return (
-    <div id="blurb" className="d-flex flex-column left-0 right-0 p-3">
+    <section id="blurb" className="d-flex left-0 right-0 flex-column p-3">
       <h2 id="about" className="display-5 fw-bold section-header">
         About Me
       </h2>
@@ -57,6 +57,6 @@ export default function About() {
           <li>Bootstrap CSS</li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }

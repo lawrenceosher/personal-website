@@ -48,11 +48,14 @@ function App() {
           </Nav.Link>
         </Nav>
       </Navbar>
-      <Landing />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
+
+      <div className="d-flex flex-column">
+        <Landing />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+      </div>
     </>
   );
 }

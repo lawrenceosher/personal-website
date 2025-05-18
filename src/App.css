@@ -1,11 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #161616 !important;
   color: white !important;
   font-family: "Figtree", sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 80px;
+}
+
 
 #header {
   background-color: #161616 !important;
+  z-index: 999;
 }
 
 #name {
@@ -43,6 +57,12 @@ body {
 #blurb {
   letter-spacing: 4%;
   background-color: #0080ffa9;
+}
+
+section {
+  scroll-padding-top: 80px;
+  width: 100%;
+  height: 100vh;
 }
 
 .section-header {
