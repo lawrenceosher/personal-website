@@ -39,7 +39,7 @@ export default function About() {
       <hr />
 
       <h5>
-        While, I enjoy learning new technologies, the ones I'm currently most
+        While I enjoy learning new technologies, the ones I'm currently most
         comfortable with are:
       </h5>
       <div className="d-flex">
