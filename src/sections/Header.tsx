@@ -8,7 +8,7 @@ import "../App.css";
 export default function Header() {
   return (
     <header className="d-flex flex-column">
-      <Navbar className="flex-fill justify-content-end">
+      <Navbar className="flex-fill justify-content-end" sticky="top">
         <Nav className="fs-3 me-2">
           <Nav.Link
             href="#about"
