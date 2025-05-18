@@ -19,13 +19,13 @@ export default function Experience() {
             </div>
           </div>
 
-          <p>
+          <p className="fs-4">
             I was part of the Fulfillment Process Automation (FPA) team working
             on the Fulfillment Virtual Labor Board and Slotting Automation
             System.
           </p>
 
-          <ul>
+          <ul className="fs-5">
             <li>
               Implemented SOLID engineering principles to make DRY, extensible
               Spring Boot code for distributed workflow that imports and exports
@@ -68,13 +68,13 @@ export default function Experience() {
             </div>
           </div>
 
-          <p>
+          <p className="fs-4">
             I was part of the Cloud CME team working on the 'Activity Editor' so
             any institutions using the LMS could manage any activity or event
             they set up for their medical professionals.
           </p>
 
-          <ul>
+          <ul className="fs-5">
             <li>
               Overhauled 10 frontend pages using React.js to update CloudCME's
               learning product for a more “modern” feel for medical
@@ -110,12 +110,12 @@ export default function Experience() {
             </div>
           </div>
 
-          <p>
+          <p className="fs-4">
             Generate is Northeastern's Student-Led Product Development Studio,
             and I was part of the 'FindHer' team.
           </p>
 
-          <ul>
+          <ul className="fs-4">
             <li>
               Participated in code reviews and team meetings for 'FindHer' web
               application that provides women in India with a platform for job

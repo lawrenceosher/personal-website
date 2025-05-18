@@ -7,8 +7,8 @@ export default function About() {
         About Me
       </h2>
 
-      <div className="d-flex">
-        <p className="w-50 fs-5 mt-2 me-5">
+      <div className="d-flex mb-0">
+        <p className="w-50 fs-4 mt-2 me-5 mb-0">
           Hey! I'm Lawrence Osher! I'm an engineer focused on creating
           applications and products with users at the forefront of every
           decision. I care about making peoples' lives easier through code,
@@ -21,7 +21,7 @@ export default function About() {
             engineering roles, and I am available to start immediately.
           </p>
         </p>
-        <p className="w-50 fs-5 mt-2">
+        <p className="w-50 fs-4 mt-2">
           I graduated from Northeastern University in May 2025 with a Bachelor's
           Degreee in Computer Science and a Human-Centered Computing
           Concentration. I'm based in Long Island, New York, and I have previous
@@ -36,9 +36,9 @@ export default function About() {
         </p>
       </div>
 
-      <hr />
+      <hr className="mt-0" />
 
-      <h5>
+      <h5 className="mt-0">
         While I enjoy learning new technologies, the ones I'm currently most
         comfortable with are:
       </h5>

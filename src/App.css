@@ -60,7 +60,7 @@ html {
 }
 
 #landing {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   padding-bottom: 80px;
 }
@@ -88,4 +88,8 @@ section {
 
 .nav-link.active {
   background-color: transparent !important;
+}
+
+.light-blue-border {
+  border-color: #0080ff !important;
 }
