@@ -1,9 +1,11 @@
+import { LuIdCard } from "react-icons/lu";
 import "../App.css";
 
 export default function About() {
   return (
     <section id="blurb" className="d-flex left-0 right-0 flex-column p-3">
-      <h2 id="about" className="display-5 fw-bold section-header">
+      <h2 id="about" className="display-5 fw-bold section-header d-flex align-items-center">
+        <LuIdCard className="me-3 text-white fw-normal" />
         About Me
       </h2>
 

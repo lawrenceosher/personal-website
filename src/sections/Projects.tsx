@@ -1,10 +1,12 @@
 import { Card, Container } from "react-bootstrap";
 import "../App.css";
+import { LiaProjectDiagramSolid } from "react-icons/lia";
 
 export default function Projects() {
   return (
     <section id="blurb" className="d-flex flex-column left-0 right-0 p-3">
-      <h2 id="projects" className="display-5 fw-bold section-header m-0 p-0">
+      <h2 id="projects" className="display-5 fw-bold section-header m-0 p-0 d-flex align-items-center">
+        <LiaProjectDiagramSolid className="me-3 text-white fw-normal" />
         Projects
       </h2>
 

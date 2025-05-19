@@ -2,7 +2,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 import { FaRegCopyright } from "react-icons/fa";
-import { RiPagesLine } from "react-icons/ri";
+import { RiContactsLine, RiPagesLine } from "react-icons/ri";
 
 
 import "../styles/Contact.css";
@@ -10,7 +10,8 @@ import "../styles/Contact.css";
 export default function Contact() {
   return (
     <div className="d-flex flex-column left-0 right-0 p-3">
-      <h2 id="contact" className="display-5 fw-bold section-header text-end">
+      <h2 id="contact" className="display-5 fw-bold section-header d-flex align-items-center justify-content-end">
+        <RiContactsLine className="me-3 text-white fw-normal" />
         Contact
       </h2>
 

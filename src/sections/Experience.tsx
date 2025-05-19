@@ -1,10 +1,12 @@
 import { Tab, Tabs } from "react-bootstrap";
 import "../App.css";
+import { RiBriefcase2Line } from "react-icons/ri";
 
 export default function Experience() {
   return (
     <section className="d-flex flex-column p-3">
-      <h2 id="experience" className="display-5 fw-bold section-header text-end">
+      <h2 id="experience" className="display-5 fw-bold section-header d-flex align-items-center justify-content-end">
+        <RiBriefcase2Line className="me-3 text-white fw-normal" />
         Experience
       </h2>
 
