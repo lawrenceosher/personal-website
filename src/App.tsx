@@ -7,34 +7,30 @@ import Contact from "./sections/Contact";
 import { Navbar, Nav } from "react-bootstrap";
 import { LiaProjectDiagramSolid } from "react-icons/lia";
 import { LuIdCard } from "react-icons/lu";
-import { RiBriefcase2Line, RiContactsLine } from "react-icons/ri";
+import { RiBriefcase2Line, RiContactsLine, RiPagesLine } from "react-icons/ri";
 
 function App() {
   return (
     <>
-      <Navbar
-        id="header"
-        className="flex-fill justify-content-end"
-        sticky="top"
-      >
+      <Navbar id="header" className="d-flex" sticky="top">
         <Nav className="fs-3 me-2">
           <Nav.Link
             href="#about"
-            className="header-item me-2 d-flex align-items-center"
+            className="header-item d-flex align-items-center"
           >
             <LuIdCard className="me-2" />
             About
           </Nav.Link>
           <Nav.Link
             href="#experience"
-            className="header-item me-2 d-flex align-items-center"
+            className="header-item d-flex align-items-center"
           >
             <RiBriefcase2Line className="me-2" />
             Experience
           </Nav.Link>
           <Nav.Link
             href="#projects"
-            className="header-item me-2 d-flex align-items-center"
+            className="header-item d-flex align-items-center"
           >
             <LiaProjectDiagramSolid className="me-2" />
             Projects
@@ -45,6 +41,17 @@ function App() {
           >
             <RiContactsLine className="me-2" />
             Contact
+          </Nav.Link>
+        </Nav>
+
+        <Nav className="ms-auto fs-3 me-2">
+          <Nav.Link
+            href="https://lawrence-osher-resume.s3.us-east-2.amazonaws.com/Lawrence_Osher_Resume_v2.pdf"
+            target="_blank"
+            className="header-item d-flex align-items-center"
+          >
+            <RiPagesLine className="me-2" />
+            Resume
           </Nav.Link>
         </Nav>
       </Navbar>
