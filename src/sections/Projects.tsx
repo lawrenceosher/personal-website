@@ -60,8 +60,8 @@ export default function Projects() {
               <Card.Title>NU Board</Card.Title>
               <Card.Text>
                 Agile project planning tool that includes a Kanban Board, Sprint
-                Planning Page, and Task Roadmap. Integrated within a 'Fake Stack
-                Overflow' app. All project work done in the 'Project Planning'
+                Planning Page, and Task Roadmap. Integrated within a 'Stack
+                Overflow' clone. All project work done in the 'Project Planning'
                 tab.
               </Card.Text>
                <a

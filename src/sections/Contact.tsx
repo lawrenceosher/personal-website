@@ -2,6 +2,8 @@ import { MdOutlineEmail } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 import { FaRegCopyright } from "react-icons/fa";
+import { RiPagesLine } from "react-icons/ri";
+
 
 import "../styles/Contact.css";
 
@@ -38,6 +40,16 @@ export default function Contact() {
           target="_blank"
         >
           <FiGithub className="me-2 mt-1" /> <span>lawrenceosher</span>
+        </a>
+
+        <a
+          id="contact-link"
+          className="d-flex align-items-center fs-1 text-decoration-none text-white m-0 p-0"
+          href="https://lawrence-osher-resume.s3.us-east-2.amazonaws.com/Lawrence_Osher_Resume_v2.pdf"
+          target="_blank"
+        >
+          <RiPagesLine className="me-2 mt-1" />
+          Resume
         </a>
       </div>
 
