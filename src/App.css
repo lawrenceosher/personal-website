@@ -93,3 +93,7 @@ section {
 .light-blue-border {
   border-color: #0080ff !important;
 }
+
+#technology-list li, #experience-list li {
+  list-style-type: "- ";
+}

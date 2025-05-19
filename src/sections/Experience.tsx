@@ -25,7 +25,7 @@ export default function Experience() {
             System.
           </p>
 
-          <ul className="fs-5">
+          <ul id="experience-list" className="fs-5">
             <li>
               Implemented SOLID engineering principles to make DRY, extensible
               Spring Boot code for distributed workflow that imports and exports
@@ -74,7 +74,7 @@ export default function Experience() {
             they set up for their medical professionals.
           </p>
 
-          <ul className="fs-5">
+          <ul id="experience-list" className="fs-5">
             <li>
               Overhauled 10 frontend pages using React.js to update CloudCME's
               learning product for a more “modern” feel for medical
@@ -115,7 +115,7 @@ export default function Experience() {
             and I was part of the 'FindHer' team.
           </p>
 
-          <ul className="fs-4">
+          <ul id="experience-list" className="fs-4">
             <li>
               Participated in code reviews and team meetings for 'FindHer' web
               application that provides women in India with a platform for job

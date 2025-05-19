@@ -43,14 +43,14 @@ export default function About() {
         comfortable with are:
       </h5>
       <div className="d-flex">
-        <ul className="w-50 fs-5 mt-2 me-5">
+        <ul id="technology-list" className="w-50 fs-5 mt-2 me-5">
           <li>React</li>
           <li>Java</li>
           <li>JavaScript/TypeScript</li>
           <li>Node.js</li>
         </ul>
 
-        <ul className="w-50 fs-5 mt-2 me-5">
+        <ul id="technology-list" className="w-50 fs-5 mt-2 me-5">
           <li>Spring Framework</li>
           <li>MongoDB</li>
           <li>SQL</li>
