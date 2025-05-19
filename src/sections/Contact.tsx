@@ -4,13 +4,15 @@ import { FiGithub } from "react-icons/fi";
 import { FaRegCopyright } from "react-icons/fa";
 import { RiContactsLine, RiPagesLine } from "react-icons/ri";
 
-
 import "../styles/Contact.css";
 
 export default function Contact() {
   return (
     <div className="d-flex flex-column left-0 right-0 p-3">
-      <h2 id="contact" className="display-5 fw-bold section-header d-flex align-items-center justify-content-end">
+      <h2
+        id="contact"
+        className="display-5 fw-bold section-header d-flex align-items-center justify-content-end"
+      >
         <RiContactsLine className="me-3 text-white fw-normal" />
         Contact
       </h2>
@@ -54,7 +56,9 @@ export default function Contact() {
         </a>
       </div>
 
-      <p className="mt-5 text-center">
+      <a id="top" href="#landing" className="mt-5 text-center text-decoration-none text-white">J.A.R.V.I.S. take me back to the top</a>
+
+      <p className="mt-2 text-center">
         <FaRegCopyright className="me-1 mb-1" /> Lawrence Osher 2025
       </p>
     </div>

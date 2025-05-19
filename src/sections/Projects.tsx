@@ -5,7 +5,10 @@ import { LiaProjectDiagramSolid } from "react-icons/lia";
 export default function Projects() {
   return (
     <section id="blurb" className="d-flex flex-column left-0 right-0 p-3">
-      <h2 id="projects" className="display-5 fw-bold section-header m-0 p-0 d-flex align-items-center">
+      <h2
+        id="projects"
+        className="display-5 fw-bold section-header m-0 p-0 d-flex align-items-center"
+      >
         <LiaProjectDiagramSolid className="me-3 text-white fw-normal" />
         Projects
       </h2>
@@ -24,20 +27,22 @@ export default function Projects() {
                 users to create queues/watch lists for Movies, TV Shows, Albums,
                 Books, Podcasts, and Video Games.
               </Card.Text>
-              <a
-                className="btn btn-outline-light me-2"
-                href="https://github.com/lawrenceosher/UpNext-web-app"
-                target="_blank"
-              >
-                Source Code
-              </a>
-              <a
-                className="btn btn-outline-light"
-                href="https://upnextqueue.netlify.app/"
-                target="_blank"
-              >
-                Deployed Site
-              </a>
+              <div className="d-flex">
+                <a
+                  className="btn btn-outline-light me-2"
+                  href="https://github.com/lawrenceosher/UpNext-web-app"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+                <a
+                  className="btn btn-outline-light"
+                  href="https://upnextqueue.netlify.app/"
+                  target="_blank"
+                >
+                  Deployed Site
+                </a>
+              </div>
 
               <Container className="d-flex mt-3 p-0 flex-wrap">
                 <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
@@ -48,6 +53,9 @@ export default function Projects() {
                 </span>
                 <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
                   TypeScript
+                </span>
+                <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
+                  JavaScript
                 </span>
               </Container>
             </Card.Body>
@@ -66,20 +74,22 @@ export default function Projects() {
                 Overflow' clone. All project work done in the 'Project Planning'
                 tab.
               </Card.Text>
-               <a
-                className="btn btn-outline-light me-2"
-                href="https://github.com/lawrenceosher/spring25-team-project-spring25-project-group-309"
-                target="_blank"
-              >
-                Source Code
-              </a>
-              <a
-                className="btn btn-outline-light"
-                href="https://cs4530-s25-309.onrender.com/"
-                target="_blank"
-              >
-                Deployed Site
-              </a>
+              <div className="d-flex ">
+                <a
+                  className="btn btn-outline-light me-2"
+                  href="https://github.com/lawrenceosher/spring25-team-project-spring25-project-group-309"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+                <a
+                  className="btn btn-outline-light"
+                  href="https://cs4530-s25-309.onrender.com/"
+                  target="_blank"
+                >
+                  Deployed Site
+                </a>
+              </div>
 
               <Container className="d-flex mt-3 p-0 flex-wrap">
                 <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">

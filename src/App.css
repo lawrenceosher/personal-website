@@ -5,7 +5,12 @@
 body {
   background-color: #161616 !important;
   color: white !important;
-  font-family: "Figtree", sans-serif;
+  background-image: radial-gradient(
+    rgba(247, 247, 247, 0.38) 2px,
+    transparent 2px
+  );
+  background-size: 64px 64px;
+  font-family: "Orbitron", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -13,13 +18,17 @@ body {
 html {
   margin: 0;
   padding: 0;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 120px;
 }
-
 
 #header {
   background-color: #161616 !important;
   z-index: 999;
+  background-image: radial-gradient(
+    rgba(247, 247, 247, 0.38) 2px,
+    transparent 2px
+  );
+  background-size: 64px 64px;
 }
 
 #name {
@@ -46,12 +55,56 @@ html {
   letter-spacing: 1px;
 }
 
-#name:hover {
-  text-shadow: 0 0 10px #0080ff;
+#name:hover, #title:hover {
+  filter: brightness(1.5) drop-shadow(0 0 10px #0080ff);
 }
 
 .header-item {
   color: #0080ff !important;
+  position: relative;
+  display: block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.5s;
+  z-index: 1;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #262626;
+    border-bottom: 2px solid #262626;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #585858;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff !important;
+    &:before {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+    &:after {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
 }
 
 #blurb {
@@ -67,8 +120,8 @@ html {
 
 section {
   scroll-padding-top: 80px;
-  width: 100%;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100vh;
 }
 
 .section-header {
@@ -94,6 +147,19 @@ section {
   border-color: #0080ff !important;
 }
 
-#technology-list li, #experience-list li {
+#technology-list li,
+#experience-list li {
   list-style-type: "- ";
+}
+
+.arc-reactor {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: url("/arcreactor.svg") no-repeat center center/contain;
+  transition: box-shadow 1s ease;
+}
+
+.arc-reactor:hover {
+  filter: brightness(1.5) drop-shadow(0 0 10px #0080ff);
 }
