@@ -1,0 +1,8 @@
+#experience .nav-link {
+  color: white;
+}
+
+#technology-list li,
+#experience-list li {
+  list-style-type: "- ";
+}

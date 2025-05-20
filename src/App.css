@@ -138,31 +138,10 @@ section {
   -webkit-text-stroke: 2px #ffffff;
 }
 
-#experience .nav-link {
-  color: white;
-}
-
 .nav-link.active {
   background-color: transparent !important;
 }
 
 .light-blue-border {
   border-color: #0080ff !important;
-}
-
-#technology-list li,
-#experience-list li {
-  list-style-type: "- ";
-}
-
-.arc-reactor {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  background: url("/arcreactor.svg") no-repeat center center/contain;
-  transition: box-shadow 1s ease;
-}
-
-.arc-reactor:hover {
-  filter: brightness(1.5) drop-shadow(0 0 10px #0080ff);
 }

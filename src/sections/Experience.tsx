@@ -1,5 +1,6 @@
 import { Container, Tab, Tabs } from "react-bootstrap";
 import "../App.css";
+import "../styles/Experience.css"
 import { RiBriefcase2Line } from "react-icons/ri";
 
 export default function Experience() {
