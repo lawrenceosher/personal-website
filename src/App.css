@@ -18,7 +18,12 @@ body {
 html {
   margin: 0;
   padding: 0;
-  scroll-padding-top: 120px;
+}
+
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 120px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -153,7 +158,6 @@ html {
 }
 
 section {
-  scroll-padding-top: 80px;
   min-width: 100vw;
   min-height: 100vh;
 }
