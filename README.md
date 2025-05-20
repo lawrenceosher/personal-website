@@ -10,7 +10,7 @@
 <br />
 <div align="center">
   <a href="https://lawrenceosher.com">
-    <img src="public/arcreactor.svg" alt="Arc Reactor" width="50%">
+    <img src="public/landing.png" alt="Arc Reactor" width="50%">
   </a>
 
 <br/>
