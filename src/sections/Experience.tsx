@@ -1,138 +1,47 @@
 import { Container, Tab, Tabs } from "react-bootstrap";
 import "../App.css";
-import "../styles/Experience.css"
+import "../styles/Experience.css";
 import { RiBriefcase2Line } from "react-icons/ri";
+import { experience } from "../data/experience";
 
 export default function Experience() {
   return (
     <section className="d-flex flex-column p-3">
       <Container className="m-0 p-0">
-      <h2 id="experience" className="display-5 fw-bold section-header d-flex align-items-center justify-content-end">
-        <RiBriefcase2Line className="me-3 text-white fw-normal" />
-        Experience
-      </h2>
+        <h2
+          id="experience"
+          className="display-5 fw-bold section-header d-flex align-items-center justify-content-end"
+        >
+          <RiBriefcase2Line className="me-3 text-white fw-normal" />
+          Experience
+        </h2>
 
-      <Tabs id="experience" defaultActiveKey="Chewy" className="mb-3">
-        <Tab eventKey="Chewy" title="Chewy">
-          <div className="d-lg-flex align-items-center mb-3">
-            <h1>Software Engineer Co-op</h1>
-            <div className="ms-auto fs-3">
-              <span>June 2024 - Dec. 2024</span>
-              <span className="mx-2"> | </span>
-              <span>Boston, MA</span>
-            </div>
-          </div>
+        <Tabs id="experience" defaultActiveKey="Chewy" className="mb-3">
+          {experience.map((exp, index) => {
+            return (
+              <Tab key={index} eventKey={exp.company} title={exp.company}>
+                <div className="d-lg-flex align-items-center mb-3">
+                  <h1>{exp.company}</h1>
+                  <div className="ms-auto fs-3">
+                    <span>
+                      {exp.start} - {exp.end}
+                    </span>
+                    <span className="mx-2"> | </span>
+                    <span>{exp.location}</span>
+                  </div>
+                </div>
 
-          <p className="fs-4">
-            I was part of the Fulfillment Process Automation (FPA) team working
-            on the Fulfillment Virtual Labor Board and Slotting Automation
-            System.
-          </p>
+                <p className="fs-4">{exp.description}</p>
 
-          <ul id="experience-list" className="fs-5">
-            <li>
-              Implemented SOLID engineering principles to make DRY, extensible
-              Spring Boot code for distributed workflow that imports and exports
-              CSV files to S3 Bucket, enabling batch functions to execute linear
-              programming optimizer
-            </li>
-            <li>
-              Enabled users to input different values to the workflow solver
-              without relying on manual developer intervention through ownership
-              of the “Workflow Configurations” feature. Designed a REST API,
-              crafted full-coverage automated unit/integration tests, managed
-              flyway migrations, and styled user-friendly inputs on the UI
-            </li>
-            <li>
-              Created API specifications using Swagger and technical knowledge
-              transfers in Confluence to accelerate future team member
-              onboarding
-            </li>
-            <li>
-              Utilized Amazon Q Developer and AWS Bedrock as resources to write
-              unit tests, debug code, and explain code to decrease development
-              time by 50%
-            </li>
-            <li>
-              Averaged 5.5 story points (1 story point = 2 business days) per
-              sprint to deliver 40 tickets over 6 months while building the UI
-              (Next.js), API (Spring Boot), AWS infrastructure, and database
-              (PostgreSQL) from the ”ground-up” for fulfillment center
-              application that increased slotting automation by 90%
-            </li>
-          </ul>
-        </Tab>
-        <Tab eventKey="HealthStream" title="HealthStream">
-          <div className="d-lg-flex align-items-center mb-3">
-            <h1>Software Developer Intern</h1>
-            <div className="ms-auto fs-3">
-              <span>Sep. 2023 - Dec. 2023</span>
-              <span className="mx-2"> | </span>
-              <span>Remote</span>
-            </div>
-          </div>
-
-          <p className="fs-4">
-            I was part of the Cloud CME team working on the 'Activity Editor' so
-            any institutions using the LMS could manage any activity or event
-            they set up for their medical professionals.
-          </p>
-
-          <ul id="experience-list" className="fs-5">
-            <li>
-              Overhauled 10 frontend pages using React.js to update CloudCME's
-              learning product for a more “modern” feel for medical
-              professionals
-            </li>
-            <li>
-              Learned about the workflow of making a frontend page from mock-up
-              to page layout to adding functionality to adding styling
-            </li>
-            <li>
-              Gained experience with key React patterns such as state management
-              for conditional rendering, outputting lists, and working with user
-              input through forms
-            </li>
-            <li>Styled all pages with Tailwind CSS framework</li>
-            <li>
-              Implemented 15 CRUD endpoints with the Entity Framework for users
-              to dynamically retrieve and update data
-            </li>
-            <li>
-              Participated in Agile ceremonies such as sprint reviews and
-              retrospectives for full-stack development and UI/UX design
-            </li>
-          </ul>
-        </Tab>
-        <Tab eventKey="Generate" title="Generate">
-          <div className="d-lg-flex align-items-center mb-3">
-            <h1>Software Engineer</h1>
-            <div className="ms-auto fs-3">
-              <span>Jan. 2023 - Apr. 2023</span>
-              <span className="mx-2"> | </span>
-              <span>Boston, MA</span>
-            </div>
-          </div>
-
-          <p className="fs-4">
-            Generate is Northeastern's Student-Led Product Development Studio,
-            and I was part of the 'FindHer' team.
-          </p>
-
-          <ul id="experience-list" className="fs-4">
-            <li>
-              Participated in code reviews and team meetings for 'FindHer' web
-              application that provides women in India with a platform for job
-              searches
-            </li>
-            <li>Utilized Python for backend development of endpoints</li>
-            <li>
-              Developed React components, such as a drag and drop ranking system
-              and a file uploader, for the frontend of a REST API
-            </li>
-          </ul>
-        </Tab>
-      </Tabs>
+                <ul id="experience-list" className="fs-5">
+                  {exp.points.map((item, indexPoints) => {
+                    return <li key={indexPoints}>{item}</li>;
+                  })}
+                </ul>
+              </Tab>
+            );
+          })}
+        </Tabs>
       </Container>
     </section>
   );
