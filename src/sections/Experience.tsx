@@ -1,10 +1,11 @@
-import { Tab, Tabs } from "react-bootstrap";
+import { Container, Tab, Tabs } from "react-bootstrap";
 import "../App.css";
 import { RiBriefcase2Line } from "react-icons/ri";
 
 export default function Experience() {
   return (
     <section className="d-flex flex-column p-3">
+      <Container className="m-0 p-0">
       <h2 id="experience" className="display-5 fw-bold section-header d-flex align-items-center justify-content-end">
         <RiBriefcase2Line className="me-3 text-white fw-normal" />
         Experience
@@ -15,7 +16,7 @@ export default function Experience() {
           <div className="d-flex align-items-center mb-3">
             <h1 className="flex-fill">Software Engineer Co-op</h1>
             <div className="fs-3">
-              <span>June 2024 - December 2024</span>
+              <span>June 2024 - Dec. 2024</span>
               <span className="mx-2"> | </span>
               <span>Boston, MA</span>
             </div>
@@ -64,7 +65,7 @@ export default function Experience() {
           <div className="d-flex align-items-center mb-3">
             <h1 className="flex-fill">Software Developer Intern</h1>
             <div className="fs-3">
-              <span>September 2023 - December 2023</span>
+              <span>Sep. 2023 - Dec. 2023</span>
               <span className="mx-2"> | </span>
               <span>Remote</span>
             </div>
@@ -106,7 +107,7 @@ export default function Experience() {
           <div className="d-flex align-items-center mb-3">
             <h1 className="flex-fill">Software Engineer</h1>
             <div className="fs-3">
-              <span>January 2023 - April 2023</span>
+              <span>Jan. 2023 - April 2023</span>
               <span className="mx-2"> | </span>
               <span>Boston, MA</span>
             </div>
@@ -131,6 +132,7 @@ export default function Experience() {
           </ul>
         </Tab>
       </Tabs>
+      </Container>
     </section>
   );
 }
