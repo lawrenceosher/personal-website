@@ -56,7 +56,7 @@ export default function Contact() {
         </a>
       </div>
 
-      <a id="top" href="#landing" className="mt-5 text-center text-decoration-none text-white">J.A.R.V.I.S. take me back to the top</a>
+      <a id="top" href="#landing" className="mt-5 text-center text-decoration-none text-white">J.A.R.V.I.S. - Take me back to the top</a>
 
       <p className="mt-2 text-center">
         <FaRegCopyright className="me-1 mb-1" /> Lawrence Osher 2025
