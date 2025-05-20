@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export default function About() {
   return (
-    <section id="blurb" className="d-flex left-0 right-0 flex-column p-3">
+    <section id="blue-section" className="d-flex left-0 right-0 flex-column p-3">
       <Container className="m-0 p-0">
         <h2
           id="about"
