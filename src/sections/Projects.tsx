@@ -1,10 +1,14 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 import "../App.css";
 import { LiaProjectDiagramSolid } from "react-icons/lia";
+import { projects } from "../data/projects";
 
 export default function Projects() {
   return (
-    <section id="blue-section" className="d-flex flex-column left-0 right-0 p-3">
+    <section
+      id="blue-section"
+      className="d-flex flex-column left-0 right-0 p-3"
+    >
       <h2
         id="projects"
         className="display-5 fw-bold section-header m-0 p-0 d-flex align-items-center"
@@ -15,166 +19,50 @@ export default function Projects() {
 
       <Container className="p-0 m-0">
         <Row className="p-0 mt-3 d-flex gy-4">
-          <Col lg>
-            <Card
-              className="bg-black border border-2"
-            >
-              <Card.Img variant="top" src="/queuePage.png" />
-              <Card.Body className="text-white">
-                <Card.Title>UpNext</Card.Title>
-                <Card.Text>
-                  UpNext is an all-inclusive media consumption app that allows
-                  users to create queues/watch lists for Movies, TV Shows,
-                  Albums, Books, Podcasts, and Video Games.
-                </Card.Text>
-                <div className="d-flex">
-                  <a
-                    className="btn btn-outline-light me-2"
-                    href="https://github.com/lawrenceosher/UpNext-web-app"
-                    target="_blank"
-                  >
-                    Source Code
-                  </a>
-                  <a
-                    className="btn btn-outline-light"
-                    href="https://upnextqueue.netlify.app/"
-                    target="_blank"
-                  >
-                    Deployed Site
-                  </a>
-                </div>
+          {projects.map((proj, index) => {
+            return (
+              <Col key={index} lg>
+                <Card className="bg-black border border-2">
+                  <Card.Img variant="top" src={proj.image} />
+                  <Card.Body className="text-white">
+                    <Card.Title>{proj.name}</Card.Title>
+                    <Card.Text>{proj.description}</Card.Text>
+                    <div className="d-flex">
+                      <a
+                        className="btn btn-outline-light me-2"
+                        href={proj.sourceCodeLink}
+                        target="_blank"
+                      >
+                        Source Code
+                      </a>
+                      {proj.deployedSiteLink && (
+                        <a
+                          className="btn btn-outline-light"
+                          href={proj.deployedSiteLink}
+                          target="_blank"
+                        >
+                          Deployed Site
+                        </a>
+                      )}
+                    </div>
 
-                <Container className="d-flex mt-3 p-0 flex-wrap">
-                  <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
-                    MERN
-                  </span>
-                  <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
-                    Bootstrap
-                  </span>
-                  <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
-                    TypeScript
-                  </span>
-                  <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
-                    JavaScript
-                  </span>
-                </Container>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col lg>
-            <Card
-              className="bg-black border border-2"
-            >
-              <Card.Img variant="top" src="/nuBoard.png" />
-              <Card.Body className="text-white">
-                <Card.Title>NU Board</Card.Title>
-                <Card.Text>
-                  Agile project planning tool that includes a Kanban Board,
-                  Sprint Planning Page, and Task Roadmap. Integrated within a
-                  'Stack Overflow' clone. All project work done in the 'Project
-                  Planning' tab.
-                </Card.Text>
-                <div className="d-flex ">
-                  <a
-                    className="btn btn-outline-light me-2"
-                    href="https://github.com/lawrenceosher/spring25-team-project-spring25-project-group-309"
-                    target="_blank"
-                  >
-                    Source Code
-                  </a>
-                  <a
-                    className="btn btn-outline-light"
-                    href="https://cs4530-s25-309.onrender.com/"
-                    target="_blank"
-                  >
-                    Deployed Site
-                  </a>
-                </div>
-
-                <Container className="d-flex mt-3 p-0 flex-wrap">
-                  <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
-                    React
-                  </span>
-                  <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
-                    Bootstrap
-                  </span>
-                  <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
-                    TypeScript
-                  </span>
-                </Container>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col lg>
-            <Card
-              className="bg-black border border-2"
-            >
-              <Card.Img variant="top" src="/timeSync.png" />
-              <Card.Body className="text-white">
-                <Card.Title>TimeSync</Card.Title>
-                <Card.Text>
-                  Interface that makes it easier to find available times to hang
-                  out through visualizing and voting upon different times. Users
-                  can then ask generative AI for plans based on time
-                  restrictions.
-                </Card.Text>
-                <a
-                  className="btn btn-outline-light me-2"
-                  href="https://github.com/lawrenceosher/TimeSync"
-                  target="_blank"
-                >
-                  Source Code
-                </a>
-
-                <Container className="d-flex mt-3 p-0 flex-wrap">
-                  <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
-                    React
-                  </span>
-                  <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
-                    JavaScript
-                  </span>
-                  <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
-                    CSS
-                  </span>
-                </Container>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col lg>
-            <Card
-              className="bg-black border border-2"
-            >
-              <Card.Img variant="top" src="/imageProcessor.png" />
-              <Card.Body className="text-white">
-                <Card.Title>Image Processor</Card.Title>
-                <Card.Text>
-                  Created GUI Application in Java that enabled users to load,
-                  blur, sharpen, filter, flip and save pictures. Visualized a
-                  histogram of the pixels present in the picture using Java
-                  Swing library.
-                </Card.Text>
-                <a
-                  className="btn btn-outline-light me-2"
-                  href="https://github.com/lawrenceosher/personal-projects/tree/main/ImageProcessor"
-                  target="_blank"
-                >
-                  Source Code
-                </a>
-
-                <Container className="d-flex mt-3 p-0 flex-wrap">
-                  <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
-                    Java
-                  </span>
-                  <span className="border border-2 p-2 rounded light-blue-border me-2 my-2">
-                    JUnit Testing
-                  </span>
-                </Container>
-              </Card.Body>
-            </Card>
-          </Col>
+                    <Container className="d-flex mt-3 p-0 flex-wrap">
+                      {proj.technologies.map((tech, index) => {
+                        return (
+                          <span
+                            key={index}
+                            className="border border-2 p-2 rounded light-blue-border me-2 my-2"
+                          >
+                            {tech}
+                          </span>
+                        );
+                      })}
+                    </Container>
+                  </Card.Body>
+                </Card>
+              </Col>
+            );
+          })}
         </Row>
       </Container>
     </section>
