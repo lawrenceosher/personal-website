@@ -13,9 +13,9 @@ export default function Experience() {
 
       <Tabs id="experience" defaultActiveKey="Chewy" className="mb-3">
         <Tab eventKey="Chewy" title="Chewy">
-          <div className="d-flex align-items-center mb-3">
-            <h1 className="flex-fill">Software Engineer Co-op</h1>
-            <div className="fs-3">
+          <div className="d-lg-flex align-items-center mb-3">
+            <h1>Software Engineer Co-op</h1>
+            <div className="ms-auto fs-3">
               <span>June 2024 - Dec. 2024</span>
               <span className="mx-2"> | </span>
               <span>Boston, MA</span>
@@ -62,9 +62,9 @@ export default function Experience() {
           </ul>
         </Tab>
         <Tab eventKey="HealthStream" title="HealthStream">
-          <div className="d-flex align-items-center mb-3">
-            <h1 className="flex-fill">Software Developer Intern</h1>
-            <div className="fs-3">
+          <div className="d-lg-flex align-items-center mb-3">
+            <h1>Software Developer Intern</h1>
+            <div className="ms-auto fs-3">
               <span>Sep. 2023 - Dec. 2023</span>
               <span className="mx-2"> | </span>
               <span>Remote</span>
@@ -104,10 +104,10 @@ export default function Experience() {
           </ul>
         </Tab>
         <Tab eventKey="Generate" title="Generate">
-          <div className="d-flex align-items-center mb-3">
-            <h1 className="flex-fill">Software Engineer</h1>
-            <div className="fs-3">
-              <span>Jan. 2023 - April 2023</span>
+          <div className="d-lg-flex align-items-center mb-3">
+            <h1>Software Engineer</h1>
+            <div className="ms-auto fs-3">
+              <span>Jan. 2023 - Apr. 2023</span>
               <span className="mx-2"> | </span>
               <span>Boston, MA</span>
             </div>
