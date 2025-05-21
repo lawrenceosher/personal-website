@@ -21,7 +21,7 @@ export default function Experience() {
             return (
               <Tab key={index} eventKey={exp.company} title={exp.company}>
                 <div className="d-lg-flex align-items-center mb-3">
-                  <h1>{exp.company}</h1>
+                  <h1 className="fw-bold">{exp.company}</h1>
                   <div className="ms-auto fs-3">
                     <span>
                       {exp.start} - {exp.end}
