@@ -10,6 +10,23 @@ import { LuIdCard } from "react-icons/lu";
 import { RiBriefcase2Line, RiContactsLine, RiPagesLine } from "react-icons/ri";
 
 function App() {
+  // Fix scroll issue on mobile layout
+  // when the navbar is collapsed and the user clicks on a link
+  const handleNavClick = (id: string) => {
+    // Close navbar
+    const toggleButton = document.querySelector(
+      ".navbar-toggler"
+    ) as HTMLElement;
+    if (toggleButton && getComputedStyle(toggleButton).display !== "none") {
+      toggleButton.click(); // Triggers collapse
+    }
+
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      el?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 300); // Wait for collapse animation to finish before scrolling
+  };
+
   return (
     <>
       <Navbar collapseOnSelect expand="lg" id="header" sticky="top">
@@ -18,28 +35,28 @@ function App() {
           <Navbar.Collapse>
             <Nav className="fs-3 me-2">
               <Nav.Link
-                href="#about"
+                onClick={() => handleNavClick("about")}
                 className="header-item d-flex align-items-center"
               >
                 <LuIdCard className="me-2" />
                 About
               </Nav.Link>
               <Nav.Link
-                href="#experience"
+                onClick={() => handleNavClick("experience")}
                 className="header-item d-flex align-items-center"
               >
                 <RiBriefcase2Line className="me-2" />
                 Experience
               </Nav.Link>
               <Nav.Link
-                href="#projects"
+                onClick={() => handleNavClick("projects")}
                 className="header-item d-flex align-items-center"
               >
                 <LiaProjectDiagramSolid className="me-2" />
                 Projects
               </Nav.Link>
               <Nav.Link
-                href="#contact"
+                onClick={() => handleNavClick("contact")}
                 className="header-item d-flex align-items-center"
               >
                 <RiContactsLine className="me-2" />
@@ -63,10 +80,18 @@ function App() {
 
       <div className="d-flex flex-column">
         <Landing />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
+        <section id="about">
+          <About />
+        </section>
+        <section id="experience">
+          <Experience />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <div id="contact">
+          <Contact />
+        </div>
       </div>
     </>
   );

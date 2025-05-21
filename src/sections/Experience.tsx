@@ -6,7 +6,7 @@ import { experience } from "../data/experience";
 
 export default function Experience() {
   return (
-    <section className="d-flex flex-column p-3">
+    <section id="experience" className="d-flex flex-column p-3">
       <Container className="m-0 p-0">
         <h2
           id="experience"
@@ -16,7 +16,7 @@ export default function Experience() {
           Experience
         </h2>
 
-        <Tabs id="experience" defaultActiveKey="Chewy" className="mb-3">
+        <Tabs defaultActiveKey="Chewy" className="mb-3">
           {experience.map((exp, index) => {
             return (
               <Tab key={index} eventKey={exp.company} title={exp.company}>
