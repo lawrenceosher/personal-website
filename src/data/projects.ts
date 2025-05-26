@@ -6,6 +6,7 @@ export const projects = [
       "UpNext is an all-inclusive media consumption app that allows users to create queues/watch lists for Movies, TV Shows, Albums, Books, Podcasts, and Video Games.",
     sourceCodeLink: "https://github.com/lawrenceosher/UpNext-web-app",
     deployedSiteLink: "https://upnextqueue.netlify.app/",
+    demoLink: "https://www.loom.com/share/5d7480b1ff4c43d4bbbb6f38514c01ad?sid=7265e432-4269-4d46-ad9b-390eb3609b89",
     technologies: ["MERN", "Bootstrap", "TypeScript", "JavaScript"],
   },
   {

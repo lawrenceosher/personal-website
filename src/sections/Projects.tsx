@@ -37,11 +37,20 @@ export default function Projects() {
                       </a>
                       {proj.deployedSiteLink && (
                         <a
-                          className="btn btn-outline-light"
+                          className="btn btn-outline-light me-2"
                           href={proj.deployedSiteLink}
                           target="_blank"
                         >
                           Deployed Site
+                        </a>
+                      )}
+                      {proj.demoLink && (
+                        <a
+                          className="btn btn-outline-light"
+                          href={proj.demoLink}
+                          target="_blank"
+                        >
+                          Video Demo
                         </a>
                       )}
                     </div>
