@@ -66,7 +66,7 @@ function App() {
 
             <Nav className="ms-auto fs-3 me-2">
               <Nav.Link
-                href="https://lawrence-osher-resume.s3.us-east-2.amazonaws.com/Lawrence_Osher_Resume_v2.pdf"
+                href="https://lawrence-osher-resume.s3.us-east-2.amazonaws.com/Lawrence_Osher_Resume.pdf"
                 target="_blank"
                 className="header-item d-flex align-items-center"
               >
