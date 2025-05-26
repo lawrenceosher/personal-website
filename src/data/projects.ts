@@ -17,6 +17,7 @@ export const projects = [
     sourceCodeLink:
       "https://github.com/lawrenceosher/spring25-team-project-spring25-project-group-309",
     deployedSiteLink: "https://cs4530-s25-309.onrender.com/",
+    demoLink: "https://www.loom.com/share/e05ab029f1394a75bbacd7e4f3a7dfbf?sid=c485c96f-f0c0-409d-bd25-c9cdcacf594d",
     technologies: ["React", "Bootstrap", "TypeScript"],
   },
   {
