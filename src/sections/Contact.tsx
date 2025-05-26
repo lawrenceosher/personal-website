@@ -50,7 +50,7 @@ export default function Contact() {
           <a
             id="contact-link"
             className="d-flex align-items-center fs-2 text-decoration-none text-white m-0 p-0"
-            href="https://lawrence-osher-resume.s3.us-east-2.amazonaws.com/Lawrence_Osher_Resume_v2.pdf"
+            href="https://lawrence-osher-resume.s3.us-east-2.amazonaws.com/Lawrence_Osher_Resume.pdf"
             target="_blank"
           >
             <RiPagesLine className="me-2 mt-1" />
